@@ -1,4 +1,7 @@
 from Notebook import Notebook
+from rmscene import SceneTree
+from rmscene import read_block, build_tree
+from rmscene.scene_items import Line, Point
 # Get script parameters from command line
 #import sys
 #target = sys.argv[0]
@@ -17,10 +20,6 @@ for line in filelist[:1]:
 
     notebook = Notebook(line[:right])
     nb = notebook
+    blocks = read_blocks(nb.pagelist[0].content)
 
-    testjson = nb.pages
-    print(testjson)
-
-
-# If no parameters are provided, use a default target
-
+    

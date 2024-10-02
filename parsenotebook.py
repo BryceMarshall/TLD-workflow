@@ -7,7 +7,6 @@ import rmscene
 # Call rmscene to parse the notebook
 filename="/home/bryce/repos/rm2/TLD-workflow/xochitl/52abf53a-1998-a7cf-c543-2433a25b5151/be7ee758-11b8-429a-934e-5d12964872d5.rm"
 
-
 def get_bounding_box(line: Line):
     if not line.points:
         return None
