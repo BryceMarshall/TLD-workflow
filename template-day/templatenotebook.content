@@ -1,0 +1,131 @@
+{
+    "cPages": {
+        "lastOpened": {
+            "timestamp": "1:2",
+            "value": "bbdb198d-393f-4469-a642-81c80e9b3a9c"
+        },
+        "original": {
+            "timestamp": "1:1",
+            "value": 1
+        },
+        "pages": [
+            {
+                "id": "e00f77ab-ad76-4687-a940-71aa1ed2ac71",
+                "idx": {
+                    "timestamp": "1:2",
+                    "value": "ba"
+                },
+                "redir": {
+                    "timestamp": "1:2",
+                    "value": 0
+                },
+                "template": {
+                    "timestamp": "1:2",
+                    "value": "Blank"
+                }
+            },
+            {
+                "id": "bbdb198d-393f-4469-a642-81c80e9b3a9c",
+                "idx": {
+                    "timestamp": "1:2",
+                    "value": "bb"
+                },
+                "template": {
+                    "timestamp": "1:2",
+                    "value": "P Grid margin med"
+                }
+            },
+            {
+                "deleted": {
+                    "timestamp": "1:1",
+                    "value": 1
+                },
+                "id": "f50aceb2-fe0d-4b14-8a43-f21394c97eb1",
+                "idx": {
+                    "timestamp": "1:2",
+                    "value": "bb"
+                },
+                "template": {
+                    "timestamp": "1:2",
+                    "value": "P Grid margin med"
+                }
+            }
+        ],
+        "uuids": [
+            {
+                "first": "2686b76f-6316-5660-92bc-fa834b144c03",
+                "second": 1
+            }
+        ]
+    },
+    "coverPageNumber": -1,
+    "customZoomCenterX": 0,
+    "customZoomCenterY": 936,
+    "customZoomOrientation": "portrait",
+    "customZoomPageHeight": 1872,
+    "customZoomPageWidth": 1404,
+    "customZoomScale": 1,
+    "documentMetadata": {
+        "title": "Morning Pages"
+    },
+    "dummyDocument": false,
+    "extraMetadata": {
+        "LastBallpointColor": "Black",
+        "LastBallpointSize": "2",
+        "LastBallpointv2Color": "Black",
+        "LastBallpointv2Size": "2",
+        "LastCalligraphyColor": "Black",
+        "LastCalligraphySize": "2",
+        "LastEraseSectionColor": "Black",
+        "LastEraseSectionSize": "2",
+        "LastEraserColor": "Black",
+        "LastEraserSize": "2",
+        "LastEraserTool": "Eraser",
+        "LastFinelinerv2Color": "Black",
+        "LastFinelinerv2Size": "2",
+        "LastHighlighterv2Color": "HighlighterYellow",
+        "LastHighlighterv2Size": "2",
+        "LastMarkerv2Color": "Black",
+        "LastMarkerv2Size": "1",
+        "LastPaintbrushv2Color": "Black",
+        "LastPaintbrushv2Size": "2",
+        "LastPen": "Calligraphy",
+        "LastPencilColor": "Black",
+        "LastPencilSize": "2",
+        "LastPencilv2Color": "Black",
+        "LastPencilv2Size": "2",
+        "LastSelectionToolColor": "Black",
+        "LastSelectionToolSize": "2",
+        "LastSharpPencilv2Color": "Black",
+        "LastSharpPencilv2Size": "2",
+        "LastTool": "Calligraphy"
+    },
+    "fileType": "pdf",
+    "fontName": "",
+    "formatVersion": 2,
+    "lastOpenedPage": 0,
+    "legacyEpub": false,
+    "lineHeight": -1,
+    "margins": 100,
+    "orientation": "portrait",
+    "pageCount": 2,
+    "pageTags": [
+    ],
+    "sizeInBytes": "61622",
+    "tags": [
+    ],
+    "textAlignment": "justify",
+    "textScale": 1,
+    "transform": {
+        "m11": 1,
+        "m12": 0,
+        "m13": 0,
+        "m21": 0,
+        "m22": 1,
+        "m23": 0,
+        "m31": 0,
+        "m32": 0,
+        "m33": 1
+    },
+    "zoomMode": "bestFit"
+}
