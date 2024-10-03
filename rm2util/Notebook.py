@@ -1,5 +1,9 @@
 import json
+from .Page import Page
+from .Tag import Tag
+
 from dataclasses import dataclass, field
+
 
 @dataclass
 class Notebook:
@@ -7,8 +11,14 @@ class Notebook:
     pagedict: dict = field(default_factory=dict)
 
     def __post_init__(self):
-        pagejson = self.content["cPages"]["pages"]
-        self.pagedict = {p["id"]:Page(self.prefix, p["id"]) for p in pagejson}
+        if "pages" in self.content:
+            pagejson = self.content["pages"]
+            self.pagedict = {p: Page(self.prefix, p) for p in pagejson}
+        elif "cPages" in self.content:
+            pagejson = self.content["cPages"]["pages"]
+            self.pagedict = {p["id"]:Page(self.prefix, p["id"]) for p in pagejson}
+        else:
+            raise ValueError("No pages found in content")
 
         tagjson = self.content["pageTags"]
         for tag in tagjson:
@@ -44,6 +54,8 @@ class Notebook:
     def get_pagenum(self, page: Page):
         return self.pagelist.index(page)
 
+    def get_page_with_tag(self, tagname: str):
+        return [p for p in self.pagelist if tagname in [t.name for t in p.tags]]
 
     def __repr__(self):
         pagrepr = [p for p in self.pagelist if len(p.tags) > 0]

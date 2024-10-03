@@ -20,20 +20,15 @@ class Page:
 
     @property
     def content(self):
-        with open(self.parent + "/" + self.prefix + '.rm', 'rb') as f:
-            return f.read()
+        return open(self.parent + "/" + self.prefix + '.rm', 'rb')
 
     @property
     def scene(self):
-        tree = SceneTree()
-        blocks = read_blocks(self.content)
-        build_tree(tree, blocks)
-        return tree
-
-
-
-
-
+        with self.content as contentfile:
+            tree = SceneTree()
+            blocks = read_blocks(self.content)
+            build_tree(tree, blocks)
+            return tree
 
     def __repr__(self):
         return f'''{os.linesep.join(repr(s) for s in self.tags)}'''

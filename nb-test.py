@@ -1,6 +1,6 @@
-from Notebook import Notebook
+from rm2util.Notebook import Notebook, Page
 from rmscene import SceneTree
-from rmscene import read_block, build_tree
+from rmscene import read_blocks, build_tree
 from rmscene.scene_items import Line, Point
 # Get script parameters from command line
 #import sys
@@ -18,6 +18,7 @@ for line in filelist[:1]:
     assert type(left) == int
     basename = line[left:right]
 
+    import pdb; pdb.set_trace()
     notebook = Notebook(line[:right])
     nb = notebook
     blocks = read_blocks(nb.pagelist[0].content)
